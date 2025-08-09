@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-100: #F3752B;
+}
+
+body {
+  @apply bg-primary-100
+}
