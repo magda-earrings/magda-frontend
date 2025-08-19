@@ -18,13 +18,13 @@ export const FormContainer = ({ children, className }: FormContainerProps) => {
 export const LoginForm = () => {
   return (
     <>
-      <div className="flex flex-col gap-5">
+      <form className="flex flex-col gap-5">
         <Input placeholder="Email" icon={"mdi:email"} />
         <Input placeholder="Password" icon={"mdi:lock"} />
         <a href="#" className="text-xl border-b-1 w-fit leading-[1]">
           Esqueci a senha
         </a>
-      </div>
+      </form>
 
       <LoginButton />
 
@@ -48,6 +48,24 @@ export const LoginForm = () => {
           Cadastre-se
         </a>
       </div>
+    </>
+  );
+};
+
+export const RegisterForm = () => {
+  return (
+    <>
+      <form className="flex flex-col gap-7">
+        <Input placeholder="Email" icon={"mdi:email"} />
+        <Input placeholder="Senha" icon={"mdi:lock"} />
+        <Input placeholder="Confirmar Senha" icon={"mdi:lock"} />
+        <Input placeholder="Telefone" icon={"mdi:phone"} />
+        <Input placeholder="CPF" icon={"mdi:phone"} />
+      </form>
+      <LoginButton />
+      <a href="#" className="text-xl border-b-1 w-fit leading-[1] m-auto">
+        Voltar
+      </a>
     </>
   );
 };
