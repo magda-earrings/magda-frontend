@@ -2,8 +2,9 @@
 
 @theme {
   --color-primary-100: #F3752B;
+  --color-secondary-100: #A20021;
 }
 
 body {
-  @apply bg-primary-100
+  @apply bg-primary-100;
 }
