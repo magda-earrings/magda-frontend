@@ -15,7 +15,7 @@ export const FormContainer = ({ children, className }: FormContainerProps) => {
   );
 };
 
-export const LoginForm = () => {
+export const LoginForm = ({onClick}:{onClick: () => void}) => {
   return (
     <>
       <form className="flex flex-col gap-5">
@@ -44,15 +44,15 @@ export const LoginForm = () => {
         <span className="text-xl text-[#00000080] pr-1">
           Não tem uma conta?
         </span>
-        <a href="#" className="text-xl border-b-1 w-fit leading-[1]">
+        <button onClick={onClick} className="text-xl border-b-1 w-fit leading-[1] cursor-pointer">
           Cadastre-se
-        </a>
+        </button>
       </div>
     </>
   );
 };
 
-export const RegisterForm = () => {
+export const RegisterForm = ({onClick}:{onClick: () => void}) => {
   return (
     <>
       <form className="flex flex-col gap-7">
@@ -63,9 +63,9 @@ export const RegisterForm = () => {
         <Input placeholder="CPF" icon={"mdi:phone"} />
       </form>
       <LoginButton />
-      <a href="#" className="text-xl border-b-1 w-fit leading-[1] m-auto">
+      <button onClick={onClick} className="text-xl border-b-1 w-fit leading-[1] m-auto cursor-pointer">
         Voltar
-      </a>
+      </button>
     </>
   );
 };

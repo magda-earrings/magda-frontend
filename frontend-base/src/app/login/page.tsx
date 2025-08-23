@@ -16,12 +16,12 @@ export default function LoginLayout() {
         {register == false ? (
           <>
             <h1 className="font-bold text-5xl ">Log in</h1>
-            <LoginForm />
+            <LoginForm onClick={() => setRegister(true)} />
           </>
         ) : (
           <>
             <h1 className="font-bold text-5xl ">Cadastro</h1>
-            <RegisterForm />
+            <RegisterForm onClick={() => setRegister(false)} />
           </>
         )}
       </FormContainer>

@@ -1,7 +1,14 @@
+"use client"
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
+
+  const navigate = (id: number) => {
+    router.push(`/item/${id}`);
+  };
   const products = [
     {
       id: 1,
@@ -61,6 +68,7 @@ export default function Page() {
           image={item.image}
           name={item.name}
           price={item.price}
+          onClick={() => navigate(item.id)}
         />
       ))}
     </div>
@@ -71,13 +79,15 @@ export const Product = ({
   image,
   name,
   price,
+  onClick,
 }: {
   image: string;
   name: string;
   price: number;
+  onClick: () => void;
 }) => {
   return (
-    <div className=" w-[45%] rounded-[20px] overflow-hidden shadow-md shadow-gray-500 relative">
+    <div onClick={onClick} className=" w-[45%] rounded-[20px] overflow-hidden shadow-md shadow-[#00000040] relative">
       <Image
         src={image}
         alt={name}
