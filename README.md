@@ -13,3 +13,10 @@ npm install
 ```bash
 npm run dev
 ```
+
+### 4. Rotas ativas:
+```bash
+/login
+/magda/store
+/item/[id]
+```
