@@ -21,7 +21,7 @@ export default function ItemLayout({
         icon="mingcute:arrow-left-line"
         className="rounded-full w-fit text-4xl fixed top-3 left-3 bg-primary-100 p-1 text-white cursor-pointer"
       />
-      <div className="flex flex-col min-h-screen bg-[#EDEDF4]">{children}</div>
+      <main className="flex flex-col min-h-screen bg-[#EDEDF4]">{children}</main>
       <CheckoutBar />
     </>
   );
