@@ -4,11 +4,11 @@ import magdaIcon from "/public/images/magda-icon.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export function Navigator() {
+export function Navigator({ className }: { className?: string }) {
   const router = useRouter();
 
   return (
-    <nav className="bg-primary-100 w-full rounded-t-xl text-white py-3 sticky bottom-0">
+    <nav className={`bg-primary-100 w-full rounded-t-xl text-white py-3 sticky bottom-0 ${className}`}>
       <ul className="flex justify-around text-4xl px-4 gap-4 items-center">
         <li>
           <Icon
