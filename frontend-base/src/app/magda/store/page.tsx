@@ -2,6 +2,13 @@
 import { useRouter } from "next/navigation";
 import { Product } from "@/components/Product/ProductCard/Index";
 
+interface Product {
+  id: number;
+  image: string;
+  name: string;
+  price: number;
+}
+
 export default function Page() {
   const router = useRouter();
 
