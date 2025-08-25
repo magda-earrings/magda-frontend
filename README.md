@@ -19,4 +19,6 @@ npm run dev
 /login
 /magda/store
 /item/[id]
+/settings
+/settings/options/[option]
 ```
