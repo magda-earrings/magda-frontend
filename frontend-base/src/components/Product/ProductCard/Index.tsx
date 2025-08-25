@@ -15,7 +15,7 @@ export const Product = ({
   return (
     <div
       onClick={onClick}
-      className=" w-[45%] rounded-[20px] overflow-hidden shadow-md shadow-[#00000040] relative cursor-pointer"
+      className=" w-[45%] rounded-[20px] max-w-[200px] overflow-hidden shadow-md shadow-[#00000040] relative cursor-pointer"
     >
       <Image
         src={image}

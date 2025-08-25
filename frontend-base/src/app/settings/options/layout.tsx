@@ -14,6 +14,7 @@ export default function OptionsLayout({
   const titles: Record<string, string> = {
     contact: "Fale Conosco",
     social: "Redes Sociais",
+    terms: "Termos de Uso",
   };
 
   return (

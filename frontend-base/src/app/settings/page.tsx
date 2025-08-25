@@ -26,6 +26,11 @@ export default function SettingsPage() {
       text: "Fale conosco",
       navigate: "contact",
     },
+    {
+      icon: "tabler:settings",
+      text: "Termos de uso",
+      navigate: "terms",
+    },
   ];
   return (
     <>
