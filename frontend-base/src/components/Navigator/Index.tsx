@@ -8,7 +8,9 @@ export function Navigator({ className }: { className?: string }) {
   const router = useRouter();
 
   return (
-    <nav className={`bg-primary-100 w-full rounded-t-xl text-white py-3 sticky bottom-0 ${className}`}>
+    <nav
+      className={`bg-primary-100 w-full rounded-t-xl text-white py-3 sticky bottom-0 ${className}`}
+    >
       <ul className="flex justify-around text-4xl px-4 gap-4 items-center">
         <li>
           <Icon
@@ -47,7 +49,7 @@ export function UpperNavigator() {
       <ul className="flex justify-between text-4xl px-4 gap-4 items-center">
         <li>
           <Icon
-            onClick={() => router.push("/magda/settings")}
+            onClick={() => router.push("/settings")}
             className="cursor-pointer"
             icon="material-symbols:settings-rounded"
           />
@@ -66,3 +68,26 @@ export function UpperNavigator() {
     </nav>
   );
 }
+
+export const OptionsNavigator = ({
+  option,
+  titles,
+}: {
+  option: string;
+  titles: Record<string, string>;
+}) => {
+  const router = useRouter();
+  return (
+    <nav className="bg-secondary-100 grid grid-cols-3 items-center p-4 my-10">
+      <Icon
+        onClick={() => router.back()}
+        icon="mingcute:arrow-left-line"
+        className="text-white w-10 h-10 col-span-1 cursor-pointer"
+      />
+
+      <h2 className="text-2xl font-bold text-white text-center col-span-1 whitespace-nowrap">
+        {titles[option] ?? option}
+      </h2>
+    </nav>
+  );
+};
