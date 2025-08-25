@@ -15,12 +15,13 @@ export default function OptionsLayout({
     contact: "Fale Conosco",
     social: "Redes Sociais",
     terms: "Termos de Uso",
+    purchases: "Minhas Compras",
   };
 
   return (
     <div>
       <OptionsNavigator option={lastSegment} titles={titles} />
-      <main className="min-h-screen">{children}</main>
+      <main className="">{children}</main>
     </div>
   );
 }

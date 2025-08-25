@@ -8,13 +8,8 @@ export default function SettingsPage() {
   const options = [
     {
       icon: "tabler:settings",
-      text: "Sobre nós",
-      navigate: "about-us",
-    },
-    {
-      icon: "tabler:settings",
       text: "Minhas Compras",
-      navigate: "my-purchases",
+      navigate: "purchases",
     },
     {
       icon: "tabler:settings",
@@ -26,12 +21,15 @@ export default function SettingsPage() {
       text: "Fale conosco",
       navigate: "contact",
     },
+  ];
+
+  const optionsB = [
     {
       icon: "tabler:settings",
       text: "Termos de uso",
       navigate: "terms",
     },
-  ];
+  ]
   return (
     <>
       <section className="h-full flex flex-col gap-10">
@@ -52,7 +50,7 @@ export default function SettingsPage() {
           <hr className=" my-2 mx-1 border-[#EDEDF4]/20" />
         </SettingsContainer>
         <SettingsContainer>
-          {options.map((option) => (
+          {optionsB.map((option) => (
             <div key={option.navigate}>
               <hr className="my-2 mx-1 border-[#EDEDF4]/20" />
               <Items
