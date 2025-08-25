@@ -7,18 +7,13 @@ export default function OptionsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname(); // pega o path inteiro
-  const parts = pathname.split("/"); // divide em segmentos
-  const lastSegment = parts[parts.length - 1]; // pega o último (ex: "general")
+  const pathname = usePathname(); // take all the path
+  const parts = pathname.split("/"); // split into segments
+  const lastSegment = parts[parts.length - 1]; // get the last one (ex: "contact")
 
   const titles: Record<string, string> = {
     contact: "Fale Conosco",
     social: "Redes Sociais",
-    "about-us": "Sobre Nós",
-    terms: "Termos de Uso",
-    purchased: "Compras",
-    general: "Configurações Gerais",
-    profile: "Perfil",
   };
 
   return (
