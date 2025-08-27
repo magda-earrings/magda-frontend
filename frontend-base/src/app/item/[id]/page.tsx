@@ -1,20 +1,34 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import ProductImage from "@/components/Product/ProductImage/Index";
 import ProductInfo from "@/components/Product/ProductInfo/Index";
 import ProductDescription from "@/components/Product/ProductDescription/Index";
 import ProductDetails from "@/components/Product/ProductDetails/Index";
+import { items } from "./items.js";
 
 export default function Item() {
+  const { id } = useParams(); // take id from the route /item/[id]
+  const itemId = Number(id); // convert to number if your items use numeric id
+  const item = items.find((i) => i.id === itemId);
+
+  if (!item) {
+    return <div className="m-auto mt-16 text-2xl text-primary-100">Item não encontrado</div>;
+  }
+
   return (
-    <section className="flex flex-col">
-      <ProductImage src="https://picsum.photos/200/200?random=1" />
+    <section className="flex flex-col lg:flex-row">
+      <ProductImage src={item.image} />
       <section className="p-6 gap-6 flex flex-col">
-        <ProductInfo />
+        <ProductInfo
+          colors={item.colors}
+          itemName={item.name}
+          itemValue={item.value}
+        />
         <hr className="border-t-2 border-[#00000080]" />
-        <ProductDescription />
+        <ProductDescription description={item.description} />
         <hr className="border-t-2 border-[#00000080]" />
-        <ProductDetails />
+        <ProductDetails details={item.details} />
       </section>
     </section>
   );
