@@ -8,7 +8,7 @@ export default function ProductImage({ src }: { src: string }) {
       alt="Product Image"
       width={380}
       height={380}
-      className="rounded-b-[20px] w-full shadow-md shadow-[#00000040]"
+      className="rounded-b-[20px] max-w-100 w-full shadow-md shadow-[#00000040]"
     />
   );
 }
