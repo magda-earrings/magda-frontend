@@ -59,7 +59,7 @@ export function UpperNavigator() {
         </li>
         <li>
           <Icon
-            onClick={() => router.push("/magda/profile")}
+            onClick={() => router.push("/profile")}
             className="cursor-pointer"
             icon="mingcute:user-2-fill"
           />
