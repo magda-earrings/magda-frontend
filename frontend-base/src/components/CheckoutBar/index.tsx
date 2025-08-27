@@ -5,6 +5,8 @@ import { itemAtom } from "@/atoms/itemAtom";
 
 import { showAlert } from "@/utils/sweetAlerts";
 
+import { getColorName } from "@/utils/getColorName";
+
 export default function CheckoutBar() {
   const item = useAtomValue(itemAtom);
 
@@ -26,7 +28,7 @@ export default function CheckoutBar() {
     if (!item) return;
     const phone = "5511977588088";
     const message = `Olá, gostaria de comprar o item:%0A${item.nome}%0ACor: ${
-      item.cor || "não especificada"
+      getColorName(item.cor ?? "")
     }`;
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };

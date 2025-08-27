@@ -30,8 +30,7 @@ export default function Item() {
     if (!item) return;
 
     // Default to the first color if available
-    const initialColor = item.colors[0] || null;
-
+    const initialColor = item.colors[0];
     setSelectedColor(initialColor);
 
     setItem({
