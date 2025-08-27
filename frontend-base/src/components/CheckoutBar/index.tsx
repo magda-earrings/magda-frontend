@@ -7,12 +7,20 @@ export default function CheckoutBar() {
   const item = useAtomValue(itemAtom);
 
   const handleCartClick = () => {
-    console.log("Item no atom:", item);
+    if (!item) return;
+
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+
+    cart.push({ nome: item.nome, cor: item.cor });
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    console.log("Cart updated:", cart);
   };
 
   const handleBuyClick = () => {
     console.log("Item no atom:", item);
   };
+
   return (
     <nav className="bg-[#F79D5C] p-2 sticky bottom-0 z-10">
       <ul className="flex justify-around">
