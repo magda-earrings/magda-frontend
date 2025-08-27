@@ -1,10 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 @theme {
   --color-primary-100: #F3752B;
   --color-secondary-100: #A20021;
+  --font-Outfit: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   @apply bg-primary-100;
+  @apply font-Outfit;
 }
