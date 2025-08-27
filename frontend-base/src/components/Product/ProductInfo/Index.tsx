@@ -1,12 +1,23 @@
+import { useEffect } from "react";
+
 export default function ProductInfo({
   itemName,
   itemValue,
   colors,
+  onClick,
+  selectedColor,
 }: {
   itemName: string;
   itemValue: string;
   colors: string[];
+  onClick: (color: string) => void;
+  selectedColor: string | null;
 }) {
+  // init a default color
+  useEffect(() => {
+    onClick(colors[0]);
+  }, []);
+
   return (
     <div className="flex justify-around">
       <div className="flex flex-col items-start w-1/2 gap-2">
@@ -17,9 +28,12 @@ export default function ProductInfo({
         <div className="flex gap-2">
           {colors.map((color, index) => (
             <span
+              onClick={() => onClick(color)}
               key={index}
               style={{ backgroundColor: color }}
-              className="w-7 h-7 rounded-full border border-black"
+              className={`w-7 h-7 rounded-full border-2 hover:scale-110 transition-transform cursor-pointer ${
+                selectedColor === color ? "border-black" : "opacity-50"
+              }`}
             />
           ))}
         </div>
