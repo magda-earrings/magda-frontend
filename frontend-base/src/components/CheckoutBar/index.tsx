@@ -3,6 +3,8 @@
 import { useAtomValue } from "jotai";
 import { itemAtom } from "@/atoms/itemAtom";
 
+import { showAlert } from "@/utils/sweetAlerts";
+
 export default function CheckoutBar() {
   const item = useAtomValue(itemAtom);
 
@@ -11,10 +13,13 @@ export default function CheckoutBar() {
 
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
-    cart.push({ nome: item.nome, cor: item.cor });
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    console.log("Cart updated:", cart);
+    try {
+      cart.push({ nome: item.nome, cor: item.cor });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      showAlert("success", "Item adicionado ao carrinho");
+    } catch (error) {
+      showAlert("error", "Erro ao adicionar item ao carrinho");
+    }
   };
 
   const handleBuyClick = () => {
