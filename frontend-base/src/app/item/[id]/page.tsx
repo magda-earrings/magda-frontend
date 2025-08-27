@@ -60,7 +60,7 @@ export default function Item() {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row">
+    <section className="flex flex-col lg:flex-row lg:m-auto">
       <ProductImage src={item.image} />
       <section className="p-6 gap-6 flex flex-col">
         <ProductInfo

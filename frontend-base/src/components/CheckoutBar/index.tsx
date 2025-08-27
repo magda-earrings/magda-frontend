@@ -23,7 +23,12 @@ export default function CheckoutBar() {
   };
 
   const handleBuyClick = () => {
-    console.log("Item no atom:", item);
+    if (!item) return;
+    const phone = "5511977588088";
+    const message = `Olá, gostaria de comprar o item:%0A${item.nome}%0ACor: ${
+      item.cor || "não especificada"
+    }`;
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };
 
   return (
