@@ -3,10 +3,17 @@ import { Icon } from "@iconify/react";
 import magdaIcon from "/public/images/magda-icon.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export function Navigator({ className }: { className?: string }) {
   const router = useRouter();
 
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    setCartCount(cart.length);
+  }, []);
   return (
     <nav
       className={`bg-primary-100 w-full rounded-t-xl text-white py-3 sticky bottom-0 ${className}`}
@@ -29,7 +36,12 @@ export function Navigator({ className }: { className?: string }) {
             <Icon icon="tabler:zoom" />
           </div>
         </li>
-        <li>
+        <li className="relative">
+          {cartCount > 0 && (
+            <div className="absolute -top-2 -right-3 text-sm w-5 h-5 text-center rounded-full bg-white text-primary-100 font-bold">
+              {cartCount}
+            </div>
+          )}
           <Icon
             onClick={() => router.push("/magda/cart")}
             className="cursor-pointer"
