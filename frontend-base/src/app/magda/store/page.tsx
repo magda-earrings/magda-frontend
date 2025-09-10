@@ -11,16 +11,18 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black flex flex-wrap justify-between gap-5 gap-y-10 py-10">
-      {products.map((item) => (
-        <Product
-          key={item.id}
-          image={item.image}
-          name={item.name}
-          price={item.price}
-          onClick={() => navigate(item.id)}
-        />
-      ))}
-    </div>
+    <section className="flex justify-center w-full">
+      <div className="text-black flex flex-wrap justify-center gap-5 gap-y-10 py-10">
+        {products.map((item) => (
+          <Product
+            key={item.id}
+            image={item.image}
+            name={item.name}
+            price={item.price}
+            onClick={() => navigate(item.id)}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
