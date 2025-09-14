@@ -8,12 +8,11 @@ export default function ProductInfo({
   selectedColor,
 }: {
   itemName: string;
-  itemValue: string;
+  itemValue: number;
   colors: string[];
   onClick: (color: string) => void;
   selectedColor: string | null;
 }) {
-  // init a default color
   useEffect(() => {
     onClick(colors[0]);
   }, []);
@@ -23,7 +22,7 @@ export default function ProductInfo({
       <div className="flex flex-col items-start w-1/2 gap-2">
         <div className="text-2xl">{itemName ?? "N/A"}</div>
         <div className="text-secondary-100 font-bold text-3xl">
-          {itemValue ?? "N/A"}
+            R$ {itemValue?.toFixed(2).replace(".", ",") ?? "N/A"}
         </div>
         <div className="flex gap-2">
           {colors.map((color, index) => (

@@ -3,7 +3,7 @@ export const items = [
     id: 1,
     image: "/images/barbara.jpeg", // Bárbara: mapa
     name: "Mapa",
-    value: "R$ 100,00",
+  value: 100.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -22,7 +22,7 @@ export const items = [
     id: 2,
     image: "/images/angelica.jpeg", // Angélica: raio
     name: "Raio",
-    value: "R$ 250,00",
+  value: 250.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -42,7 +42,7 @@ export const items = [
     id: 3,
     image: "/images/cristina.jpeg", // Cristina: triângulo
     name: "Triângulo",
-    value: "R$ 180,00",
+  value: 180.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -61,7 +61,7 @@ export const items = [
     id: 4,
     image: "/images/magdalena.jpeg", // Magdalena: flor
     name: "Flor",
-    value: "R$ 450,00",
+  value: 450.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -80,7 +80,7 @@ export const items = [
     id: 5,
     image: "/images/rosangela.jpeg", // Rosângela: círculo
     name: "Círculo",
-    value: "R$ 300,00",
+  value: 300.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -99,7 +99,7 @@ export const items = [
     id: 6,
     image: "/images/leticia.jpeg", // Letícia: quadrado
     name: "Quadrado",
-    value: "R$ 220,00",
+  value: 220.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -118,7 +118,7 @@ export const items = [
     id: 7,
     image: "/images/ester.jpeg", // Ester: coração
     name: "Coração",
-    value: "R$ 150,00",
+  value: 150.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -137,7 +137,7 @@ export const items = [
     id: 8,
     image: "/images/sara.jpeg", // Sara: estrela
     name: "Estrela",
-    value: "R$ 600,00",
+  value: 600.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -157,7 +157,7 @@ export const items = [
     id: 9,
     image: "/images/juliana.jpeg", // Juliana: lua
     name: "Lua",
-    value: "R$ 120,00",
+  value: 120.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -176,7 +176,7 @@ export const items = [
     id: 10,
     image: "/images/natascha.jpeg", // Natascha: gota
     name: "Gota",
-    value: "R$ 180,00",
+  value: 180.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -195,7 +195,7 @@ export const items = [
     id: 11,
     image: "/images/ana-luisa.jpeg", // Ana Luísa: seta
     name: "Seta",
-    value: "R$ 200,00",
+  value: 200.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -214,7 +214,7 @@ export const items = [
     id: 12,
     image: "/images/isadora.jpeg", // Isadora: boca
     name: "Boca",
-    value: "R$ 270,00",
+  value: 270.00,
     colors: [
       "#350b4b",
       "#0a0b0b",

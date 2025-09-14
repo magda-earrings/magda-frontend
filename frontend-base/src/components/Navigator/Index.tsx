@@ -43,7 +43,7 @@ export function Navigator({ className }: { className?: string }) {
             </div>
           )}
           <Icon
-            onClick={() => router.push("/magda/cart")}
+            onClick={() => router.push("/cart")}
             className="cursor-pointer"
             icon="mdi:cart"
           />

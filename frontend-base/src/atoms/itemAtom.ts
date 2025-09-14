@@ -1,8 +1,11 @@
 import { atom } from "jotai";
 
-export interface ItemState {
+export type ItemState = {
   nome: string;
-  cor: string | null;
-}
+  cor: string;
+  valor: number;
+  img: string;
+  quantidade: number;
+} | null;
 
-export const itemAtom = atom<ItemState | null>(null);
+export const itemAtom = atom<ItemState>(null);
