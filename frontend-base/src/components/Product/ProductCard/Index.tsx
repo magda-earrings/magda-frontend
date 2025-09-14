@@ -26,7 +26,7 @@ export const Product = ({
       />
       <div className="flex flex-col items-center bg-secondary-100 text-[#EDEDF4] text-lg">
         <h2>{name}</h2>
-        <p>R$ {price}</p>
+        <p> {price}</p>
       </div>
       <Icon
         className="absolute top-3 right-3 text-xl text-secondary-100"

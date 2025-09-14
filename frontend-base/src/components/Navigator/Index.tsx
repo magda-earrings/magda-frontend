@@ -70,11 +70,11 @@ export function UpperNavigator() {
           <Image src={magdaIcon} alt="Magda Logo" />
         </li>
         <li>
-          <Icon
+          {/* <Icon
             onClick={() => router.push("/profile")}
             className="cursor-pointer"
             icon="mingcute:user-2-fill"
-          />
+          /> */}
         </li>
       </ul>
     </nav>
