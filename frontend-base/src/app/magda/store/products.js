@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     image: "/images/barbara.jpeg",
-    name: "Mapa",
+  name: "barbara",
     price: "R$ 100,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Mapa artístico em estilo moderno, perfeito para decoração.",
@@ -11,7 +11,7 @@ export const products = [
   {
     id: 2,
     image: "/images/angelica.jpeg",
-    name: "Raio",
+  name: "angelica",
     price: "R$ 250,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Design inspirado em um raio, trazendo energia e impacto visual.",
@@ -20,7 +20,7 @@ export const products = [
   {
     id: 3,
     image: "/images/cristina.jpeg",
-    name: "Triângulo",
+  name: "cristina",
     price: "R$ 180,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Peça em formato de triângulo com estilo minimalista.",
@@ -29,7 +29,7 @@ export const products = [
   {
     id: 4,
     image: "/images/magdalena.jpeg",
-    name: "Flor",
+  name: "magdalena",
     price: "R$ 450,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Flor estilizada com acabamento metálico e traços modernos.",
@@ -38,7 +38,7 @@ export const products = [
   {
     id: 5,
     image: "/images/rosangela.jpeg",
-    name: "Círculo",
+  name: "rosangela",
     price: "R$ 300,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Círculo perfeito para compor ambientes sofisticados.",
@@ -47,7 +47,7 @@ export const products = [
   {
     id: 6,
     image: "/images/leticia.jpeg",
-    name: "Quadrado",
+  name: "leticia",
     price: "R$ 220,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Design geométrico em formato quadrado com toque elegante.",
@@ -56,7 +56,7 @@ export const products = [
   {
     id: 7,
     image: "/images/ester.jpeg",
-    name: "Coração",
+  name: "ester",
     price: "R$ 150,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Coração artístico, representando amor e estilo.",
@@ -65,7 +65,7 @@ export const products = [
   {
     id: 8,
     image: "/images/sara.jpeg",
-    name: "Estrela",
+  name: "sara",
     price: "R$ 600,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Estrela brilhante com detalhes refinados e acabamento premium.",
@@ -74,7 +74,7 @@ export const products = [
   {
     id: 9,
     image: "/images/juliana.jpeg",
-    name: "Lua",
+  name: "juliana",
     price: "R$ 120,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Lua estilizada para iluminar e inspirar ambientes.",
@@ -83,7 +83,7 @@ export const products = [
   {
     id: 10,
     image: "/images/natascha.jpeg",
-    name: "Gota",
+  name: "natascha",
     price: "R$ 180,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Design em forma de gota, elegante e moderno.",
@@ -92,7 +92,7 @@ export const products = [
   {
     id: 11,
     image: "/images/ana-luisa.jpeg",
-    name: "Seta",
+  name: "ana-luisa",
     price: "R$ 200,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Seta estilizada representando direção e movimento.",
@@ -101,7 +101,7 @@ export const products = [
   {
     id: 12,
     image: "/images/isadora.jpeg",
-    name: "Boca",
+  name: "isadora",
     price: "R$ 270,00",
   colors: ["#350b4b", "#0a0b0b", "#2e1d19", "#111b71", "#1c351f", "#a8350b", "#950b19", "#ac0b5b", "#aa950b"],
     description: "Boca artística com estilo pop art para ambientes modernos.",

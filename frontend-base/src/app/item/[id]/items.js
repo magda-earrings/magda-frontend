@@ -2,7 +2,7 @@ export const items = [
   {
     id: 1,
     image: "/images/barbara.jpeg", // Bárbara: mapa
-    name: "Mapa",
+  name: "barbara",
   value: 100.00,
     colors: [
       "#350b4b",
@@ -21,7 +21,7 @@ export const items = [
   {
     id: 2,
     image: "/images/angelica.jpeg", // Angélica: raio
-    name: "Raio",
+  name: "angelica", 
   value: 250.00,
     colors: [
       "#350b4b",
@@ -41,7 +41,7 @@ export const items = [
   {
     id: 3,
     image: "/images/cristina.jpeg", // Cristina: triângulo
-    name: "Triângulo",
+  name: "cristina",
   value: 180.00,
     colors: [
       "#350b4b",
@@ -60,7 +60,7 @@ export const items = [
   {
     id: 4,
     image: "/images/magdalena.jpeg", // Magdalena: flor
-    name: "Flor",
+  name: "magdalena",
   value: 450.00,
     colors: [
       "#350b4b",
@@ -79,7 +79,7 @@ export const items = [
   {
     id: 5,
     image: "/images/rosangela.jpeg", // Rosângela: círculo
-    name: "Círculo",
+  name: "rosangela",
   value: 300.00,
     colors: [
       "#350b4b",
@@ -98,7 +98,7 @@ export const items = [
   {
     id: 6,
     image: "/images/leticia.jpeg", // Letícia: quadrado
-    name: "Quadrado",
+  name: "leticia",
   value: 220.00,
     colors: [
       "#350b4b",
@@ -117,7 +117,7 @@ export const items = [
   {
     id: 7,
     image: "/images/ester.jpeg", // Ester: coração
-    name: "Coração",
+  name: "ester",
   value: 150.00,
     colors: [
       "#350b4b",
@@ -136,7 +136,7 @@ export const items = [
   {
     id: 8,
     image: "/images/sara.jpeg", // Sara: estrela
-    name: "Estrela",
+  name: "sara",
   value: 600.00,
     colors: [
       "#350b4b",
@@ -156,7 +156,7 @@ export const items = [
   {
     id: 9,
     image: "/images/juliana.jpeg", // Juliana: lua
-    name: "Lua",
+  name: "juliana",
   value: 120.00,
     colors: [
       "#350b4b",
@@ -175,7 +175,7 @@ export const items = [
   {
     id: 10,
     image: "/images/natascha.jpeg", // Natascha: gota
-    name: "Gota",
+  name: "natascha",
   value: 180.00,
     colors: [
       "#350b4b",
@@ -194,7 +194,7 @@ export const items = [
   {
     id: 11,
     image: "/images/ana-luisa.jpeg", // Ana Luísa: seta
-    name: "Seta",
+  name: "ana-luisa",
   value: 200.00,
     colors: [
       "#350b4b",
@@ -213,7 +213,7 @@ export const items = [
   {
     id: 12,
     image: "/images/isadora.jpeg", // Isadora: boca
-    name: "Boca",
+  name: "isadora",
   value: 270.00,
     colors: [
       "#350b4b",
