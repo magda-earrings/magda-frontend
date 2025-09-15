@@ -46,7 +46,7 @@ export default function SettingsPage() {
   );
 }
 
-export const Items = ({
+const Items = ({
   icon,
   text,
   navigate,

@@ -15,7 +15,7 @@ export default function SocialPage() {
   );
 }
 
-export const InfoField = ({title,text}: {title: string; text: string}) => {
+const InfoField = ({title,text}: {title: string; text: string}) => {
     return(
         <div className="p-1 flex flex-col gap-1">
           <p className="text-white font-bold text-xl">{title}</p>

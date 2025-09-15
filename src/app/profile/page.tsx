@@ -87,7 +87,7 @@ export default function ProfilePage() {
   );
 }
 
-export const Items = ({
+const Items = ({
   icon,
   text,
   navigate,
