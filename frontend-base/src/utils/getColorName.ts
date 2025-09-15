@@ -15,9 +15,9 @@ export function getColorName(hex: string): string {
     case "#950B19":
       return "Vermelho Escuro";
     case "#AC0B5B":
-      return "Magenta Escuro";
+      return "Rosa";
     case "#AA950B":
-      return "Dourado Sujo";
+      return "Dourado";
     default:
       return "não especificada";
   }

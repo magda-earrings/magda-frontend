@@ -2,8 +2,8 @@ export const items = [
   {
     id: 1,
     image: "/images/barbara.jpeg", // Bárbara: mapa
-  name: "barbara",
-  value: 100.00,
+  name: "Barbara",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -16,13 +16,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Mapa artístico em estilo moderno, perfeito para decoração.",
-    details: ["Material: Papel couchê", "Dimensões: 30x40cm", "Peso: 200g"],
+  details: ["Material: MDF", "Dimensões: 30x40cm", "Peso: 200g"],
   },
   {
     id: 2,
     image: "/images/angelica.jpeg", // Angélica: raio
-  name: "angelica", 
-  value: 250.00,
+  name: "Angelica", 
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -36,13 +36,13 @@ export const items = [
     ],
     description:
       "Design inspirado em um raio, trazendo energia e impacto visual.",
-    details: ["Material: Aço", "Dimensões: 20x20cm", "Peso: 150g"],
+  details: ["Material: MDF", "Dimensões: 20x20cm", "Peso: 150g"],
   },
   {
     id: 3,
     image: "/images/cristina.jpeg", // Cristina: triângulo
-  name: "cristina",
-  value: 180.00,
+  name: "Cristina",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -55,13 +55,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Peça em formato de triângulo com estilo minimalista.",
-    details: ["Material: Madeira", "Dimensões: 15x15cm", "Peso: 100g"],
+  details: ["Material: MDF", "Dimensões: 15x15cm", "Peso: 100g"],
   },
   {
     id: 4,
     image: "/images/magdalena.jpeg", // Magdalena: flor
-  name: "magdalena",
-  value: 450.00,
+  name: "Magdalena",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -74,13 +74,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Flor estilizada com acabamento metálico e traços modernos.",
-    details: ["Material: Aço inoxidável", "Dimensões: 25cm", "Peso: 250g"],
+  details: ["Material: MDF", "Dimensões: 25cm", "Peso: 250g"],
   },
   {
     id: 5,
     image: "/images/rosangela.jpeg", // Rosângela: círculo
-  name: "rosangela",
-  value: 300.00,
+  name: "Rosangela",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -93,13 +93,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Círculo perfeito para compor ambientes sofisticados.",
-    details: ["Material: Vidro temperado", "Diâmetro: 30cm", "Peso: 400g"],
+  details: ["Material: MDF", "Diâmetro: 30cm", "Peso: 400g"],
   },
   {
     id: 6,
     image: "/images/leticia.jpeg", // Letícia: quadrado
-  name: "leticia",
-  value: 220.00,
+  name: "Leticia",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -112,13 +112,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Design geométrico em formato quadrado com toque elegante.",
-    details: ["Material: Madeira", "Dimensões: 20x20cm", "Peso: 180g"],
+  details: ["Material: MDF", "Dimensões: 20x20cm", "Peso: 180g"],
   },
   {
     id: 7,
     image: "/images/ester.jpeg", // Ester: coração
-  name: "ester",
-  value: 150.00,
+  name: "Ester",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -131,13 +131,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Coração artístico, representando amor e estilo.",
-    details: ["Material: Cerâmica", "Dimensões: 12x12cm", "Peso: 90g"],
+  details: ["Material: MDF", "Dimensões: 12x12cm", "Peso: 90g"],
   },
   {
     id: 8,
     image: "/images/sara.jpeg", // Sara: estrela
-  name: "sara",
-  value: 600.00,
+  name: "Sara",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -151,13 +151,13 @@ export const items = [
     ],
     description:
       "Estrela brilhante com detalhes refinados e acabamento premium.",
-    details: ["Material: Metal polido", "Dimensões: 18x18cm", "Peso: 210g"],
+  details: ["Material: MDF", "Dimensões: 18x18cm", "Peso: 210g"],
   },
   {
     id: 9,
     image: "/images/juliana.jpeg", // Juliana: lua
-  name: "juliana",
-  value: 120.00,
+  name: "Juliana",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -170,13 +170,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Lua estilizada para iluminar e inspirar ambientes.",
-    details: ["Material: Resina", "Dimensões: 25cm", "Peso: 300g"],
+  details: ["Material: MDF", "Dimensões: 25cm", "Peso: 300g"],
   },
   {
     id: 10,
     image: "/images/natascha.jpeg", // Natascha: gota
-  name: "natascha",
-  value: 180.00,
+  name: "Natascha",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -189,13 +189,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Design em forma de gota, elegante e moderno.",
-    details: ["Material: Vidro", "Altura: 15cm", "Peso: 200g"],
+  details: ["Material: MDF", "Altura: 15cm", "Peso: 200g"],
   },
   {
     id: 11,
     image: "/images/ana-luisa.jpeg", // Ana Luísa: seta
-  name: "ana-luisa",
-  value: 200.00,
+  name: "Ana-luisa",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -208,13 +208,13 @@ export const items = [
       "#aa950b",
     ],
     description: "Seta estilizada representando direção e movimento.",
-    details: ["Material: Aço pintado", "Dimensões: 20x10cm", "Peso: 160g"],
+  details: ["Material: MDF", "Dimensões: 20x10cm", "Peso: 160g"],
   },
   {
     id: 12,
     image: "/images/isadora.jpeg", // Isadora: boca
-  name: "isadora",
-  value: 270.00,
+  name: "Isadora",
+  value: 20.00,
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -227,6 +227,6 @@ export const items = [
       "#aa950b",
     ],
     description: "Boca artística com estilo pop art para ambientes modernos.",
-    details: ["Material: Acrílico", "Dimensões: 15x8cm", "Peso: 140g"],
+  details: ["Material: MDF", "Dimensões: 15x8cm", "Peso: 140g"],
   },
 ];
