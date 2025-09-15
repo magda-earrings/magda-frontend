@@ -15,8 +15,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Mapa artístico em estilo moderno, perfeito para decoração.",
-  details: ["Material: MDF", "Dimensões: 30x40cm", "Peso: 200g"],
+    description: "Brinco Bárbara — inspirado em mim, onde a coragem e a confiança são as características que mais se destacam",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 2,
@@ -34,9 +34,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description:
-      "Design inspirado em um raio, trazendo energia e impacto visual.",
-  details: ["Material: MDF", "Dimensões: 20x20cm", "Peso: 150g"],
+    description: "Brinco Angélica — dedicado à minha madrinha, que com espiritualidade e afeto profundo nunca deixa meus pés saírem do chão.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 3,
@@ -54,8 +53,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Peça em formato de triângulo com estilo minimalista.",
-  details: ["Material: MDF", "Dimensões: 15x15cm", "Peso: 100g"],
+    description: "Brinco Cristina — inspirado na minha mãe, que descobriu as cores do mundo quando eu cheguei, cores que hoje usamos para pintar cada modelo com amor.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 4,
@@ -73,8 +72,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Flor estilizada com acabamento metálico e traços modernos.",
-  details: ["Material: MDF", "Dimensões: 25cm", "Peso: 250g"],
+    description: "Brinco Magdalena — dedicado à minha vó, a razão de toda essa história, que me amou desde o primeiro segundo e que esteve presente na minha chegada assim como eu estive na sua partida.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 5,
@@ -92,8 +91,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Círculo perfeito para compor ambientes sofisticados.",
-  details: ["Material: MDF", "Diâmetro: 30cm", "Peso: 400g"],
+    description: "Brinco Rosângela — homenagem à minha tia, onde o amor se manifesta no cuidado com cada detalhe.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 6,
@@ -111,8 +110,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Design geométrico em formato quadrado com toque elegante.",
-  details: ["Material: MDF", "Dimensões: 20x20cm", "Peso: 180g"],
+    description: "Brinco Letícia — inspirado na minha irmã, que me mostra que nunca é tarde para criar laços e que a fé sempre nos sustenta.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 7,
@@ -130,8 +129,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Coração artístico, representando amor e estilo.",
-  details: ["Material: MDF", "Dimensões: 12x12cm", "Peso: 90g"],
+    description: "Brinco Ester — dedicado à minha sobrinha, cuja doçura e paciência me lembram que nada precisa ser resolvido no grito.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 8,
@@ -149,9 +148,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description:
-      "Estrela brilhante com detalhes refinados e acabamento premium.",
-  details: ["Material: MDF", "Dimensões: 18x18cm", "Peso: 210g"],
+    description: "Brinco Sara — inspirado na minha sobrinha, que mostra que o mundo é movimento e ficar parado não resolve, é preciso agir.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 9,
@@ -169,8 +167,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Lua estilizada para iluminar e inspirar ambientes.",
-  details: ["Material: MDF", "Dimensões: 25cm", "Peso: 300g"],
+    description: "Brinco Juliana — homenagem à minha prima, que carrega uma infinitude de amor para multiplicar e sempre surpreender.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 10,
@@ -188,8 +186,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Design em forma de gota, elegante e moderno.",
-  details: ["Material: MDF", "Altura: 15cm", "Peso: 200g"],
+    description: "Brinco Natascha — homenagem à minha prima, que sempre me mostrou que acreditar em si mesma é o que importa, porque o resto é resto.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 11,
@@ -207,8 +205,8 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Seta estilizada representando direção e movimento.",
-  details: ["Material: MDF", "Dimensões: 20x10cm", "Peso: 160g"],
+    description: "Brinco Ana Luísa — dedicado à minha prima, que me ensinou que o simples é mágico e que um sorriso sincero vale mais que muitas coisas.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
   {
     id: 12,
@@ -226,7 +224,7 @@ export const items = [
       "#ac0b5b",
       "#aa950b",
     ],
-    description: "Boca artística com estilo pop art para ambientes modernos.",
-  details: ["Material: MDF", "Dimensões: 15x8cm", "Peso: 140g"],
+    description: "Brinco Isadora — inspirado na minha prima, de onde vieram meus primeiros sorrisos sinceros, me mostrando que sorrir de volta sempre resolve.",
+    details: ["Material: MDF", "Peso: 10g"],
   },
 ];

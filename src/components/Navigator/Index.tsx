@@ -75,6 +75,10 @@ export function UpperNavigator() {
             className="cursor-pointer"
             icon="mingcute:user-2-fill"
           /> */}
+          <Icon
+            className="cursor-pointer opacity-0"
+            icon="material-symbols:settings-rounded"
+          />
         </li>
       </ul>
     </nav>
