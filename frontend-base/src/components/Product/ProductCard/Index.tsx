@@ -9,24 +9,24 @@ export const Product = ({
 }: {
   image: string;
   name: string;
-  price: number;
+  price: string;
   onClick: () => void;
 }) => {
   return (
     <div
       onClick={onClick}
-      className=" w-[45%] rounded-[20px] max-w-[200px] overflow-hidden shadow-md shadow-[#00000040] relative cursor-pointer"
+      className=" w-[45%] rounded-[20px] max-w-[200px] overflow-hidden shadow-md shadow-[#00000040] relative cursor-pointer flex flex-col"
     >
       <Image
         src={image}
         alt={name}
         width={150}
         height={150}
-        className="w-full h-auto"
+        className="w-full h-[200px] lg:h-[300px]"
       />
       <div className="flex flex-col items-center bg-secondary-100 text-[#EDEDF4] text-lg">
         <h2>{name}</h2>
-        <p>R$ {price}</p>
+        <p> {price}</p>
       </div>
       <Icon
         className="absolute top-3 right-3 text-xl text-secondary-100"

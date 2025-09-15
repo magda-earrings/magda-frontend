@@ -22,7 +22,7 @@ export default function ItemLayout({
         className="rounded-full w-fit text-4xl fixed top-3 left-3 bg-primary-100 p-1 text-white cursor-pointer"
       />
       <main className="flex flex-col min-h-screen bg-[#EDEDF4]">{children}</main>
-      <CheckoutBar />
+      <CheckoutBar/>
     </>
   );
 }

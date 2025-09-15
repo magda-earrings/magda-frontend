@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@iconify/react": "^6.0.0",
+    "jotai": "^2.13.1",
     "next": "15.4.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sweetalert2": "^11.22.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

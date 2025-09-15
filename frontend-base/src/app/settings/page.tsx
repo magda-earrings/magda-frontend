@@ -3,33 +3,9 @@ import { Navigator } from "@/components/Navigator/Index";
 import { SettingsContainer } from "@/components/Containers/Settings/Index";
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/navigation";
+import { options, optionsB } from "./options.js";
 
 export default function SettingsPage() {
-  const options = [
-    {
-      icon: "tabler:settings",
-      text: "Minhas Compras",
-      navigate: "purchases",
-    },
-    {
-      icon: "tabler:settings",
-      text: "Redes sociais",
-      navigate: "social",
-    },
-    {
-      icon: "tabler:settings",
-      text: "Fale conosco",
-      navigate: "contact",
-    },
-  ];
-
-  const optionsB = [
-    {
-      icon: "tabler:settings",
-      text: "Termos de uso",
-      navigate: "terms",
-    },
-  ]
   return (
     <>
       <section className="h-full flex flex-col gap-10">
