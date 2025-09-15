@@ -8,7 +8,7 @@ export default function ContactPage() {
       </h2>
       <SettingsContainer>
         <InfoField title="Whatsapp" text="(11) 91234-5678" />
-        <InfoField title="Email" text="contato@magda.com" />
+        <InfoField title="Email" text="magdabyb@outlook.com" />
       </SettingsContainer>
     </section>
   );

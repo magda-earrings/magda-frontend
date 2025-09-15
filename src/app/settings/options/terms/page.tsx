@@ -68,8 +68,8 @@ export default function SocialPage() {
         <h3 className="font-semibold mt-4">6. Contato</h3>
         <p>
           Caso tenha dúvidas sobre esta política ou o uso de seus dados, entre em contato pelo e-mail:{" "}
-          <a href="mailto:seuemail@exemplo.com" className="text-blue-600 underline">
-            seuemail@exemplo.com
+          <a href="mailto:magdabyb@outlook.com" className="text-blue-600 underline">
+            magdabyb@outlook.com
           </a>
         </p>
       </div>

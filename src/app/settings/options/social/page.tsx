@@ -7,9 +7,8 @@ export default function SocialPage() {
         Nos siga em nossas redes sociais!
       </h2>
       <SettingsContainer>
-        <InfoField title="Facebook" text="facebook.com/magda" />
-        <InfoField title="Instagram" text="instagram.com/magda" />
-        <InfoField title="Tiktok" text="magdabyd" />
+        <InfoField title="Instagram" text="instagram.com/magdabyb" />
+        <InfoField title="Tiktok" text="tiktok.com/@magdabyb" />
       </SettingsContainer>
     </section>
   );
@@ -20,7 +19,9 @@ const InfoField = ({title,text}: {title: string; text: string}) => {
         <div className="p-1 flex flex-col gap-1">
           <p className="text-white font-bold text-xl">{title}</p>
           <div className="bg-[#EDEDF4] p-2 rounded-md text-secondary-100 text-xl font-bold text-center">
-            <p>{text}</p>
+            <a href={`https://${text}`} target="_blank" rel="noopener noreferrer">
+              {text}
+            </a>
           </div>
         </div>
     )
