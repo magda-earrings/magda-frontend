@@ -15,12 +15,28 @@ const carouselImages = [
 export default function AboutPage() {
   return (
     <section className="p-4 flex flex-col gap-10">
+      <Image
+        src="/images/magda-icon.svg"
+        alt="Logotipo Magdá"
+        width={300}
+        height={0}
+        priority
+        className="mx-auto"
+      />
       <h2 className="text-3xl font-bold text-white text-center py-10">
         Seja bem vindo a Magdá
       </h2>
       <hr className="text-white" />
 
-      <p className="text-white text-[24px] text-center">A <span className="text-red-800">Magdá</span> nasceu de um amor que vai além do tempo. O nome é uma homenagem à <span className="text-red-800">Magdalena</span>, minha avó, que sempre me ensinou a acreditar em mim mesma e a seguir com fé e coragem. Ela se tornou a <span className="text-red-800">inspiração</span> para transformar esse carinho em algo maior: uma marca feita para celebrar o <span className="text-red-800">amor, a força e a união.</span></p>
+      <p className="text-white text-[24px] text-center">
+        A <span className="text-red-800">Magdá</span> nasceu de um amor que vai
+        além do tempo. O nome é uma homenagem à{" "}
+        <span className="text-red-800">Magdalena</span>, minha avó, que sempre
+        me ensinou a acreditar em mim mesma e a seguir com fé e coragem. Ela se
+        tornou a <span className="text-red-800">inspiração</span> para
+        transformar esse carinho em algo maior: uma marca feita para celebrar o{" "}
+        <span className="text-red-800">amor, a força e a união.</span>
+      </p>
 
       <hr className="text-white" />
 
@@ -28,24 +44,49 @@ export default function AboutPage() {
 
       <hr className="text-white" />
 
-      <p className="text-white text-[24px] text-center">Nossa primeira coleção, <span className="text-red-800">DNA</span>, carrega a essência de <span className="text-red-800">12 mulheres</span> da minha família que me inspiram todos os dias — mães, tias, irmãs, primas e, claro, <span className="text-red-800">minha vó</span>. Cada peça trás em si essa energia de confiança, cuidado e afeto.</p>
+      <p className="text-white text-[24px] text-center">
+        Nossa primeira coleção, <span className="text-red-800">DNA</span>,
+        carrega a essência de <span className="text-red-800">12 mulheres</span>{" "}
+        da minha família que me inspiram todos os dias — mães, tias, irmãs,
+        primas e, claro, <span className="text-red-800">minha vó</span>. Cada
+        peça trás em si essa energia de confiança, cuidado e afeto.
+      </p>
 
       <hr className="text-white" />
 
-      <p className="text-white text-[24px] text-center">A <span className="text-red-800">Magdá</span> nasceu como uma forma autêntica de se expressar, unindo geometria e cores que revelam quem você é. Os brincos sempre foram meu ponto de expressão — texturas, formas e tonalidades que refletiam cada fase e momento da minha vida.</p>
+      <p className="text-white text-[24px] text-center">
+        A <span className="text-red-800">Magdá</span> nasceu como uma forma
+        autêntica de se expressar, unindo geometria e cores que revelam quem
+        você é. Os brincos sempre foram meu ponto de expressão — texturas,
+        formas e tonalidades que refletiam cada fase e momento da minha vida.
+      </p>
 
       <hr className="text-white" />
 
-      <p className="text-red-800 font-bold text-[30px] text-center">Quando decidi criar algo meu, sabia que precisava ser verdadeiro, algo que realmente me representasse. Por isso, não poderia ser diferente:</p>
+      <p className="text-red-800 font-bold text-[30px] text-center">
+        Quando decidi criar algo meu, sabia que precisava ser verdadeiro, algo
+        que realmente me representasse. Por isso, não poderia ser diferente:
+      </p>
 
       <DoubleSection img="/images/about-us-1.png" text="brincos coloridos" />
-      <DoubleSection2 img="/images/about-us-2.png" text="ousados e excêntricos" />
-      <DoubleSection img="/images/about-us-3.png" text="feitos para nunca passarem despercebidos" />
-      <DoubleSection2 img="/images/about-us-4.png" text="afinal, a Magdá é para quem não tem medo de ser único" />
+      <DoubleSection2
+        img="/images/about-us-2.png"
+        text="ousados e excêntricos"
+      />
+      <DoubleSection
+        img="/images/about-us-3.png"
+        text="feitos para nunca passarem despercebidos"
+      />
+      <DoubleSection2
+        img="/images/about-us-4.png"
+        text="afinal, a Magdá é para quem não tem medo de ser único"
+      />
 
       <hr className="text-white" />
 
-      <p className="text-red-800 font-bold text-[30px] text-center">Porque do comum já existe demais</p>
+      <p className="text-red-800 font-bold text-[30px] text-center">
+        Porque do comum já existe demais
+      </p>
 
       <div className="flex gap-2 justify-center items-center">
         <Image
@@ -62,8 +103,9 @@ export default function AboutPage() {
         />
       </div>
 
-      <p className="text-red-800 font-bold text-[26px] text-center">Clique aqui e inicie este processo!</p>
-
+      <p className="text-red-800 font-bold text-[26px] text-center">
+        Clique aqui e inicie este processo!
+      </p>
     </section>
   );
 }
@@ -217,24 +259,28 @@ function Carousel() {
   );
 }
 
-function DoubleSection({img, text}: {img: string, text: string}) {
+function DoubleSection({ img, text }: { img: string; text: string }) {
   return (
     <div className="flex gap-5 md:gap-10 items-center justify-center h-fit">
-      <img src={img} alt="" className="w-1/2 max-w-[200px]" />
+      <img src={img} alt="" className="w-1/2 max-w-[200px] rounded-4xl" />
       <div className="p-5 text-sm text-center bg-red-800 rounded-full w-[200px] h-[200px] flex items-center justify-center shadow-md shadow-black/50">
-        <p className="text-primary-100 text-shadow-black/50 text-shadow-sm text-[24px]">{text}</p>
+        <p className="text-primary-100 text-shadow-black/50 text-shadow-sm text-[24px]">
+          {text}
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
-function DoubleSection2({img, text}: {img: string, text: string}) {
+function DoubleSection2({ img, text }: { img: string; text: string }) {
   return (
     <div className="flex gap-5 md:gap-10 items-center justify-center h-fit">
       <div className="p-5 text-sm text-center bg-red-800 rounded-full w-[200px] h-[200px] flex items-center justify-center shadow-md shadow-black/50">
-        <p className="text-primary-100 text-shadow-black/50 text-shadow-sm text-[24px]">{text}</p>
+        <p className="text-primary-100 text-shadow-black/50 text-shadow-sm text-[24px]">
+          {text}
+        </p>
       </div>
-      <img src={img} alt="" className="w-1/2 max-w-[200px]" />
+      <img src={img} alt="" className="w-1/2 max-w-[200px] rounded-4xl" />
     </div>
-  )
+  );
 }
