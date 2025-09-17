@@ -1,19 +1,19 @@
 export function getColorName(hex: string): string {
   switch (hex.toUpperCase()) {
     case "#350B4B":
-      return "Roxo Escuro";
+      return "Roxo";
     case "#0A0B0B":
-      return "Preto Profundo";
+      return "Preto";
     case "#2E1D19":
-      return "Marrom Escuro";
+      return "Marrom";
     case "#111B71":
-      return "Azul Marinho";
+      return "Azul";
     case "#1C351F":
-      return "Verde Floresta";
+      return "Verde";
     case "#A8350B":
-      return "Laranja Escuro";
+      return "Laranja";
     case "#950B19":
-      return "Vermelho Escuro";
+      return "Vermelho";
     case "#AC0B5B":
       return "Rosa";
     case "#AA950B":
