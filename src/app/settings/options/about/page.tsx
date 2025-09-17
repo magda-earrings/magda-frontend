@@ -212,7 +212,7 @@ function Carousel() {
 
   return (
     <div className="flex flex-col items-center gap-4 my-5">
-      <div className="flex items-center justify-center gap-4 w-full">
+      <div className="flex items-center justify-between gap-4 w-full">
         <button
           onClick={prev}
           className="bg-red-800 text-white px-3 py-1 rounded-full shadow"
@@ -223,7 +223,7 @@ function Carousel() {
 
         <div
           ref={containerRef}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+          className="flex gap-4 w-8/10 overflow-hidden"
         >
           {order.map((idx) => {
             const src = carouselImages[idx];
@@ -240,7 +240,7 @@ function Carousel() {
                   alt={`Magda Brincos ${idx + 1}`}
                   width={200}
                   height={0}
-                  className="rounded-lg"
+                  className="rounded-lg min-w-50"
                 />
               </div>
             );
