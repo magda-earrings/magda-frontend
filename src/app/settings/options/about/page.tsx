@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const carouselImages = [
   "/images/about-us-carrousel-1.png",
@@ -69,45 +69,149 @@ export default function AboutPage() {
 }
 
 function Carousel() {
-  const [current, setCurrent] = useState(0);
+  // Keep an order of indices so we can rotate without changing the source array
+  const [order, setOrder] = useState<number[]>(() =>
+    carouselImages.map((_, i) => i)
+  );
 
-  const prev = () => setCurrent((current - 1 + carouselImages.length) % carouselImages.length);
-  const next = () => setCurrent((current + 1) % carouselImages.length);
+  // Refs for FLIP animation
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const itemRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  const isAnimatingRef = useRef(false);
+
+  const measurePositions = (list: number[]) => {
+    const map = new Map<number, DOMRect>();
+    list.forEach((idx) => {
+      const el = itemRefs.current[idx];
+      if (el) map.set(idx, el.getBoundingClientRect());
+    });
+    return map;
+  };
+
+  const flipTo = (newOrder: number[]) => {
+    if (isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
+
+    // 1) First: measure current positions
+    const first = measurePositions(order);
+
+    // 2) Apply state change (Last will be after render)
+    setOrder(newOrder);
+
+    // 3) Wait a frame, then measure Last and set Invert transforms
+    requestAnimationFrame(() => {
+      const last = measurePositions(newOrder);
+
+      newOrder.forEach((idx) => {
+        const el = itemRefs.current[idx];
+        if (!el) return;
+        const f = first.get(idx);
+        const l = last.get(idx);
+        if (!f || !l) return;
+        const dx = f.left - l.left;
+        const dy = f.top - l.top;
+
+        // Invert
+        el.style.transform = `translate(${dx}px, ${dy}px)`;
+        el.style.willChange = "transform";
+      });
+
+      // 4) Next frame: play the transition by removing the transform
+      requestAnimationFrame(() => {
+        newOrder.forEach((idx) => {
+          const el = itemRefs.current[idx];
+          if (!el) return;
+          el.style.transition = "transform 350ms ease";
+          el.style.transform = "";
+        });
+
+        const onDone = () => {
+          newOrder.forEach((idx) => {
+            const el = itemRefs.current[idx];
+            if (!el) return;
+            el.style.transition = "";
+            el.style.willChange = "auto";
+          });
+          isAnimatingRef.current = false;
+        };
+
+        // Fallback timeout in case transitionend doesn't fire
+        const timeout = setTimeout(onDone, 400);
+
+        // Clean up on the first transition end
+        const firstEl = itemRefs.current[newOrder[0]];
+        if (firstEl) {
+          const handler = () => {
+            clearTimeout(timeout);
+            firstEl.removeEventListener("transitionend", handler);
+            onDone();
+          };
+          firstEl.addEventListener("transitionend", handler);
+        }
+      });
+    });
+  };
+
+  // Rotate right: last goes to first (previous)
+  const prev = () => {
+    if (order.length === 0 || isAnimatingRef.current) return;
+    const last = order[order.length - 1];
+    const newOrder = [last, ...order.slice(0, -1)];
+    flipTo(newOrder);
+  };
+
+  // Rotate left: first goes to last (next)
+  const next = () => {
+    if (order.length === 0 || isAnimatingRef.current) return;
+    const [first, ...rest] = order;
+    const newOrder = [...rest, first];
+    flipTo(newOrder);
+  };
 
   return (
     <div className="flex flex-col items-center gap-4 my-5">
-      <div className="relative w-full flex justify-center">
-        <Image
-          src={carouselImages[current]}
-          alt={`Magda Brincos ${current + 1}`}
-          width={800}
-          height={600}
-          className="mx-auto rounded-lg"
-        />
+      <div className="flex items-center justify-center gap-4 w-full">
         <button
           onClick={prev}
-          className="absolute left-2 top-1/2 -translate-y-1/2 bg-red-800 text-white px-3 py-1 rounded-full shadow"
+          className="bg-red-800 text-white px-3 py-1 rounded-full shadow"
           aria-label="Anterior"
         >
           &#8592;
         </button>
+
+        <div
+          ref={containerRef}
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+        >
+          {order.map((idx) => {
+            const src = carouselImages[idx];
+            return (
+              <div
+                key={idx}
+                ref={(el) => {
+                  itemRefs.current[idx] = el;
+                }}
+                className="flex items-center justify-center"
+              >
+                <Image
+                  src={src}
+                  alt={`Magda Brincos ${idx + 1}`}
+                  width={200}
+                  height={0}
+                  className="rounded-lg"
+                />
+              </div>
+            );
+          })}
+        </div>
+
         <button
           onClick={next}
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-red-800 text-white px-3 py-1 rounded-full shadow"
+          className="bg-red-800 text-white px-3 py-1 rounded-full shadow"
           aria-label="Próximo"
         >
           &#8594;
         </button>
-      </div>
-      <div className="flex gap-2 justify-center">
-        {carouselImages.map((_, idx) => (
-          <button
-            key={idx}
-            className={`w-3 h-3 rounded-full ${idx === current ? "bg-red-800" : "bg-gray-300"}`}
-            onClick={() => setCurrent(idx)}
-            aria-label={`Ir para imagem ${idx + 1}`}
-          />
-        ))}
       </div>
     </div>
   );
