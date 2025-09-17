@@ -5,12 +5,12 @@ export const options = [
   //   navigate: "purchases",
   // },
   {
-    icon: "tabler:settings",
+    icon: "formkit:instagram",
     text: "Redes sociais",
     navigate: "social",
   },
   {
-    icon: "tabler:settings",
+    icon: "mynaui:telephone-solid",
     text: "Fale conosco",
     navigate: "contact",
   },
@@ -23,7 +23,7 @@ export const options = [
 
 export const optionsB = [
   {
-    icon: "tabler:settings",
+    icon: "fa6-solid:book",
     text: "Termos de uso",
     navigate: "terms",
   },
