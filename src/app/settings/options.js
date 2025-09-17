@@ -14,6 +14,11 @@ export const options = [
     text: "Fale conosco",
     navigate: "contact",
   },
+  {
+    icon: "tabler:user",
+    text: "Sobre Nós",
+    navigate: "about",
+  },
 ];
 
 export const optionsB = [

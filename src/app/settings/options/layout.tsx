@@ -16,6 +16,7 @@ export default function OptionsLayout({
     social: "Redes Sociais",
     terms: "Termos de Uso",
     purchases: "Minhas Compras",
+    about: "",
   };
 
   return (
