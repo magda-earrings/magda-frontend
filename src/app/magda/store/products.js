@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    image: "/images/barbara.jpeg",
+    image: "/images/barbara.png",
     name: "Bárbara",
     price: "R$ 25,00",
     colors: [
@@ -20,7 +20,7 @@ export const products = [
   },
   {
     id: 2,
-    image: "/images/angelica.jpeg",
+    image: "/images/angelica.png",
     name: "Angélica",
     price: "R$ 25,00",
     colors: [
@@ -40,7 +40,7 @@ export const products = [
   },
   {
     id: 3,
-    image: "/images/cristina.jpeg",
+    image: "/images/cristina.png",
     name: "Cristina",
     price: "R$ 25,00",
     colors: [
@@ -59,7 +59,7 @@ export const products = [
   },
   {
     id: 4,
-    image: "/images/magdalena.jpeg",
+    image: "/images/magdalena.png",
     name: "Magdalena",
     price: "R$ 25,00",
     colors: [
@@ -78,7 +78,7 @@ export const products = [
   },
   {
     id: 5,
-    image: "/images/rosangela.jpeg",
+    image: "/images/rosangela.png",
     name: "Rosangela",
     price: "R$ 25,00",
     colors: [
@@ -97,7 +97,7 @@ export const products = [
   },
   {
     id: 6,
-    image: "/images/leticia.jpeg",
+    image: "/images/leticia.png",
     name: "Letícia",
     price: "R$ 25,00",
     colors: [
@@ -116,7 +116,7 @@ export const products = [
   },
   {
     id: 7,
-    image: "/images/ester.jpeg",
+    image: "/images/ester.png",
     name: "Ester",
     price: "R$ 25,00",
     colors: [
@@ -135,7 +135,7 @@ export const products = [
   },
   {
     id: 8,
-    image: "/images/sara.jpeg",
+    image: "/images/sara.png",
     name: "Sara",
     price: "R$ 25,00",
     colors: [
@@ -155,7 +155,7 @@ export const products = [
   },
   {
     id: 9,
-    image: "/images/juliana.jpeg",
+    image: "/images/juliana.png",
     name: "Juliana",
     price: "R$ 25,00",
     colors: [
@@ -174,7 +174,7 @@ export const products = [
   },
   {
     id: 10,
-    image: "/images/natascha.jpeg",
+    image: "/images/natascha.png",
     name: "Natascha",
     price: "R$ 25,00",
     colors: [
@@ -193,8 +193,8 @@ export const products = [
   },
   {
     id: 11,
-    image: "/images/ana-luisa.jpeg",
-    name: "Ana Luiza",
+    image: "/images/ana-luisa.png",
+    name: "Ana Luísa",
     price: "R$ 25,00",
     colors: [
       "#350b4b",
@@ -212,7 +212,7 @@ export const products = [
   },
   {
     id: 12,
-    image: "/images/isadora.jpeg",
+    image: "/images/isadora.png",
     name: "Isadora",
     price: "R$ 25,00",
     colors: [
