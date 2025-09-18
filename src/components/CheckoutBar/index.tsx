@@ -32,7 +32,7 @@ export default function CheckoutBar() {
 
   const handleBuyClick = () => {
     if (!item) return;
-    const phone = "5511951595150";
+    const phone = "5511951763628";
     const quantidade = 1;
     const message =
       `Olá, gostaria de comprar o item:%0A%0A` +
@@ -79,7 +79,7 @@ interface CartItem {
 
 export const CheckoutCart = () => {
   const handleBuyClick = () => {
-    const phone = "5511951595150"; // número que vai receber o pedido
+    const phone = "5511951763628"; // número que vai receber o pedido
     const cart: CartItem[] = JSON.parse(localStorage.getItem("cart") || "[]");
 
     if (cart.length === 0) {

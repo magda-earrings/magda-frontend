@@ -1,9 +1,9 @@
 export const products = [
   {
     id: 1,
-    image: "/images/barbara.jpeg",
+    image: "/images/barbara.png",
     name: "Bárbara",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -20,9 +20,9 @@ export const products = [
   },
   {
     id: 2,
-    image: "/images/angelica.jpeg",
+    image: "/images/angelica.png",
     name: "Angélica",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -36,13 +36,13 @@ export const products = [
     ],
     description:
       "Design inspirado em um raio, trazendo energia e impacto visual.",
-    details: ["Material: Aço", "Dimensões: 20x20cm", "Peso: 10g"],
+    details: ["Material: Aço", "Dimensões: 25x25cm", "Peso: 10g"],
   },
   {
     id: 3,
-    image: "/images/cristina.jpeg",
+    image: "/images/cristina.png",
     name: "Cristina",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -59,9 +59,9 @@ export const products = [
   },
   {
     id: 4,
-    image: "/images/magdalena.jpeg",
+    image: "/images/magdalena.png",
     name: "Magdalena",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -78,9 +78,9 @@ export const products = [
   },
   {
     id: 5,
-    image: "/images/rosangela.jpeg",
+    image: "/images/rosangela.png",
     name: "Rosangela",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -97,9 +97,9 @@ export const products = [
   },
   {
     id: 6,
-    image: "/images/leticia.jpeg",
+    image: "/images/leticia.png",
     name: "Letícia",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -112,13 +112,13 @@ export const products = [
       "#aa950b",
     ],
     description: "Design geométrico em formato quadrado com toque elegante.",
-    details: ["Material: Madeira", "Dimensões: 20x20cm", "Peso: 10g"],
+    details: ["Material: Madeira", "Dimensões: 25x25cm", "Peso: 10g"],
   },
   {
     id: 7,
-    image: "/images/ester.jpeg",
+    image: "/images/ester.png",
     name: "Ester",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -135,9 +135,9 @@ export const products = [
   },
   {
     id: 8,
-    image: "/images/sara.jpeg",
+    image: "/images/sara.png",
     name: "Sara",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -155,9 +155,9 @@ export const products = [
   },
   {
     id: 9,
-    image: "/images/juliana.jpeg",
+    image: "/images/juliana.png",
     name: "Juliana",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -174,9 +174,9 @@ export const products = [
   },
   {
     id: 10,
-    image: "/images/natascha.jpeg",
+    image: "/images/natascha.png",
     name: "Natascha",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -193,9 +193,9 @@ export const products = [
   },
   {
     id: 11,
-    image: "/images/ana-luisa.jpeg",
-    name: "Ana Luiza",
-    price: "R$ 20,00",
+    image: "/images/ana-luisa.png",
+    name: "Ana Luísa",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",
@@ -208,13 +208,13 @@ export const products = [
       "#aa950b",
     ],
     description: "Seta estilizada representando direção e movimento.",
-    details: ["Material: Aço pintado", "Dimensões: 20x10cm", "Peso: 10g"],
+    details: ["Material: Aço pintado", "Dimensões: 25x10cm", "Peso: 10g"],
   },
   {
     id: 12,
-    image: "/images/isadora.jpeg",
+    image: "/images/isadora.png",
     name: "Isadora",
-    price: "R$ 20,00",
+    price: "R$ 25,00",
     colors: [
       "#350b4b",
       "#0a0b0b",

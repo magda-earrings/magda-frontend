@@ -88,20 +88,14 @@ export default function AboutPage() {
         Porque do comum já existe demais
       </p>
 
-      <div className="flex gap-2 justify-center items-center">
-        <Image
-          src="/images/about-us-5.png"
-          alt="Magda Brincos"
-          width={200}
-          height={0}
-        />
-        <Image
-          src="/images/about-us-6.png"
-          alt="Magda Brincos"
-          width={200}
-          height={0}
-        />
-      </div>
+      <Image
+        src="/images/about-us-final.png"
+        alt="Mulher usando brincos grandes e coloridos"
+        width={300}
+        height={0}
+        className="mx-auto rounded-4xl"
+        priority
+      />
 
       <p className="text-red-800 font-bold text-[26px] text-center">
         Clique aqui e inicie este processo!
