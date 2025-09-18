@@ -26,16 +26,6 @@ export function Navigator({ className }: { className?: string }) {
             icon="solar:home-angle-2-bold"
           />
         </li>
-        <li className="w-full">
-          <div className="flex bg-white text-gray-500 items-center p-1 text-3xl rounded-2xl">
-            <input
-              type="text"
-              className="z-10 outline-none w-full text-xl pl-1"
-              placeholder="Buscar..."
-            />
-            <Icon icon="tabler:zoom" />
-          </div>
-        </li>
         <li className="relative">
           {cartCount > 0 && (
             <div className="absolute -top-2 -right-3 text-sm w-5 h-5 text-center rounded-full bg-white text-primary-100 font-bold">
