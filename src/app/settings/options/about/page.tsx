@@ -98,7 +98,7 @@ export default function AboutPage() {
       />
 
       <p className="text-red-800 font-bold text-[26px] text-center">
-        Clique aqui e inicie este processo!
+        Venha fazer parte deste processo!
       </p>
     </section>
   );
